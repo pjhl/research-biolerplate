@@ -1,5 +1,5 @@
 export async function sum (a, b) {
-  return Promise.resolve(a, b)
+  return Promise.resolve(a + b)
 }
 
 export default class Multiple {
@@ -20,7 +20,8 @@ export default class Multiple {
   render () {
     const { a, b } = this
     const divider = this.constructor.divider
-    const text = `${a} * ${b} = ${a*b}`
+    const text = `${a} ${divider} ${b} = ${a*b}`
     this.constructor.log(text)
+    return text
   }
 }
