@@ -2,8 +2,9 @@
   "name": "research-biolerplate",
   "version": "1.0.0",
   "description": "Researching the boilerplate (frontend lib)",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/pjhl/research-biolerplate/issues"
   },
-  "homepage": "https://github.com/pjhl/research-biolerplate#readme"
+  "homepage": "https://github.com/pjhl/research-biolerplate#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1"
+  }
 }
