@@ -20,7 +20,7 @@ export default class Multiple {
   render () {
     const { a, b } = this
     const divider = this.constructor.divider
-    const text = `${a} ${divider} ${b} = ${a*b}`
+    const text = `${a} ${divider} ${b} = ${a * b}`
     this.constructor.log(text)
     return text
   }
